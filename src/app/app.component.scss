@@ -20,8 +20,13 @@ main {
 }
 
 footer {
-  height: 80px;
-  text-align: center;
-  font-size: 0.8em;
-  background-color: #cf1411;
+  min-height: 50px;
+  background-color: #000;
+
+  p {
+  	max-width: 450px;
+  	margin: 0 auto;
+  	padding: 8px 0;
+  	font-size: 11px;
+  }
 }

@@ -5,12 +5,18 @@
 
 img {
 	height: auto;
-	max-width: 30vw;
+	margin-top: 24vh;
+	max-width: 350px;
+	width: 50vw;
 }
 
 h1 {
-	color: #cf1411;
-	font-size: 24px;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	margin: 30px auto 0;
+	max-width: 450px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
 .container {
@@ -21,7 +27,7 @@ h1 {
 }
 
 .section-1 {
-	height: 90vh;
+	height: 95vh;
 }
 
 .section-2 {
@@ -34,4 +40,16 @@ h1 {
 	width: 60%;
 	height: 400px;
 	margin: 0 auto;
+}
+
+.link {
+	background-color: #cf1411;
+	top: 20px;
+	border-radius: 2px;
+	color: #fff;
+	position: absolute;
+	left: 20px;
+	text-decoration: none;
+	padding: 5px 10px;
+	text-shadow: 0 0 3px rgba(0,0,0,0.3);
 }
