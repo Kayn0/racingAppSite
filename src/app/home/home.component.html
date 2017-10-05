@@ -1,13 +1,58 @@
 <div class="container">
-	<div class="section-1">
-		<img src="/img/logo.png">
-		<h1>Download the app to manage your fantasy Formula One racing team for the 2017 season!</h1>
-
+	<div class="section-1" [ngClass]="isScrolled ? 'stick' : 'unstick'">
+	<img src="/img/icon.png" alt="one racing icon" class="icon animate" [ngClass]="isScrolled ? 'show' : 'hide'" />
+	<h2 class="header-title" [ngClass]="isScrolled ? 'show' : 'hide'" >One Racing League</h2>
 		<a [routerLink]="['privacy-policy']" class="link">Privacy Policy</a>
-	</div>
-	<!-- <div class="section-2">
-		<div class="card">
-			<h1>Sign up to recieve offers</h1>
+
+		<img src="/img/logo.png" class="oneracing-logo animate" [ngClass]="isScrolled ? 'hide' : 'show'">
+		<h1 class="animate" [ngClass]="isScrolled ? 'hide' : 'show'">Manage your own Formula One team<br /> for the <span class="highlight-text">2018 </span>season!</h1>
+		
+		<div class="animate scroll-btn" [ngClass]="isScrolled ? 'hide' : 'show'">
+			<img src="/img/scroll.png" class="">
+			<span class="scroll-txt">Scroll down</span>
 		</div>
-	</div> -->
-</div>  
+	</div>
+
+	<div class="section-2">
+		<div class="info-holder">
+			<div class="info">
+				<img src="/img/mag.png">
+				<h3>Build your dream team</h3>
+				<p>With a starting budget create your ultimate team by purchasing drivers, chassis and power units for each of your cars.</p>
+			</div>
+
+			<div class="info">
+				<img src="/img/belgium.png">
+				<h3>Develop a strategy</h3>
+				<p>One Racing League allows many ways to succeed. Make trades through out the season to ensure you have the best team at all times.</p>
+			</div>
+
+			<div class="info">
+				<img src="/img/mclaren.png">
+				<h3>Beat your friends</h3>
+				<p>After every Formula One race weekend your team is given a score based on the race results. Rise to the top of the rankings to be the best.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-3">
+		<div class="center-vert">
+			<div class="input-holder">
+				<h4>Sign up for news and updates</h4>
+				<form class="form">
+					<input type="email" class="form__field" placeholder="Your E-Mail Address" />
+					<button type="button" class="btn btn--primary btn--inside uppercase">Send</button>
+				</form>
+			</div>
+		
+			<div class="row logo-holder">
+				<h4>Coming soon to:</h4>
+				<a href="">
+					<img src="/img/app-store-logo.png" class="app-logo" />
+				</a>
+				<a href="">
+					<img src="/img/google-play-logo.png" class="play-logo" />
+				</a>
+			</div>
+		</div>
+	</div>

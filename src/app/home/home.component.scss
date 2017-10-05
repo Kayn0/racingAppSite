@@ -1,55 +1,233 @@
 // component styles are encapsulated and only applied to their components
-* {
-  color: #FFEF00;
-}
-
-img {
-	height: auto;
-	margin-top: 24vh;
-	max-width: 350px;
-	width: 50vw;
-}
-
-h1 {
-	color: #fff;
-	font-size: 18px;
-	letter-spacing: 0.5px;
-	margin: 30px auto 0;
-	max-width: 450px;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-}
 
 .container {
-	width: 100%;
+	display: grid;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-}
-
-.section-1 {
-	height: 95vh;
-}
-
-.section-2 {
-	background-color: grey;
-	height: 90vh;
-}
-
-.card {
-	background-color: #f0f0f0;
-	width: 60%;
-	height: 400px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .link {
 	background-color: #cf1411;
-	top: 20px;
+	top: 10px;
 	border-radius: 2px;
 	color: #fff;
+	font-family: 'ubuntu-regular', helvetica, sans-serif !important;
+	letter-spacing: 0.5px;
 	position: absolute;
-	left: 20px;
+	right: 10px;
 	text-decoration: none;
 	padding: 5px 10px;
+	position: fixed;
 	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+h2 {
+	color: #fff;
+	font-family: 'ubuntu-regular', helvetica, sans-serif !important;
+	font-size: 20px;
+	position: relative;
+}
+
+h2.header-title {
+	position: absolute;
+	left: 80px;
+}
+
+.icon {
+	width: 40px;
+	position: fixed;
+	left: 10px;
+	top: 10px;
+}
+
+.animate {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+
+.hide {
+	visibility: none;
+	opacity: 0 !important;
+}
+
+.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.stick {
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999999;
+}
+
+.unstick {
+	height: calc(100vh - 6px);
+}
+
+.scroll-btn {
+	bottom: 4vh;
+	left: calc(50% - 24px);
+	opacity: 0.8;
+	position: absolute;
+	
+	img { 
+		width: 60px;
+		display: block;
+	}
+}
+
+
+.scroll-txt {
+	color: #fff;
+	text-decoration: none !important;
+	font-size: 12px;
+}
+
+.section-1 {
+	background-color: #000;
+	border-bottom: 6px solid #cf1411;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.6s ease;
+	-webkit-transition: all 0.6s ease;
+	
+
+	img.oneracing-logo {
+		height: auto;
+		margin-top: 30vh;
+		max-width: 450px;
+		width: 50vw;
+	}
+
+	h1 {
+		color: #fff;
+		font-family: 'ubuntu-regular', helvetica, sans-serif !important;
+		font-size: 24px;
+		letter-spacing: 0.5px;
+		line-height: 1.6;
+		margin: 6vh auto 0;
+		max-width: 450px;
+		text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+	}
+
+	.highlight-text {
+		color: #cf1411; 
+		font-family: 'ubuntu-bold', helvetica, sans-serif !important;
+	}
+}
+
+.section-2 {
+  border-bottom: 6px solid #cf1411;
+  height: calc(100vh - 90px);
+  margin-top: 229px;
+  position: relative;
+	z-index: 99999;
+
+	.info-holder {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+  	justify-content: center;
+  	height: 100%;
+	}
+
+	.info {
+		align-self: center;
+		height: 100%;
+		max-height: 268px;
+		max-width: 250px;
+		width: 100%;
+
+		h3 {
+			color: #cf1411;
+			font-family: 'ubuntu-bold', helvetica, sans-serif !important;
+			font-size: 20px;
+		}
+
+		p {
+			color: #333;
+			font-size: 16px;
+			line-height: 1.4;
+		}
+	}
+
+	.info:nth-child(2) {
+		margin: 0 80px;	
+	}
+
+	img {
+		height: 100%;
+		max-height: 75px;
+		width: auto;
+	}
+}
+
+.section-3 {
+	border-bottom: 6px solid #cf1411;
+	height: 100%;
+	min-height: calc(90vh - 6px);
+	position: relative;
+	
+	.center-vert {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+  	justify-content: center;
+  	height: 100%;
+  }
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+  	justify-content: center;
+  	height: 100%;
+	}
+
+	.logo-holder {
+		height: 120px;
+		
+		img {
+			height: 100%;
+			max-height: 40px;
+			margin: 0 20px;
+			width: auto;
+		}
+	}
+
+	.input-holder,
+	.logo-holder {
+		align-self: center;
+		border: 1px solid #cf1411;
+		box-shadow: 0 1px 4px rgba(0,0,0,0.16), 0 1px 4px rgba(0,0,0,0.23);
+		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.16), 0 1px 4px rgba(0,0,0,0.23);
+		color: #fff;
+		// display: block;
+		font-family: 'ubuntu-regular', helvetica, sans-serif !important;
+		letter-spacing: 1.4;
+		padding: 40px 80px;
+		position: relative;
+		margin: 120px auto 0;
+		max-width: 420px;
+		width: 100%;
+		z-index: 999999999999;
+
+		h4 {
+			background-color: #000;
+	  	border-radius: 2px;
+	  	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	  	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			padding: 20px;
+			position: absolute;
+			top: -50px;
+			left: calc(50% - 140px);
+			width: 240px;
+		}
+	}
 }

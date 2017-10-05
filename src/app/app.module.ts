@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
@@ -16,18 +17,20 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     BrowserModule,
     HttpModule,
     FormsModule,
-    routing
+    routing,
+    Ng2PageScrollModule,
   ],
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
   ],
   providers: [
     ApiService
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
   constructor(public appRef: ApplicationRef) {}
   hmrOnInit(store) {
