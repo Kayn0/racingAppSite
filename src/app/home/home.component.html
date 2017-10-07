@@ -1,19 +1,63 @@
 <div class="container">
-	<div class="section-1" [ngClass]="isScrolled ? 'stick' : 'unstick'">
-	<img src="/img/icon.png" alt="one racing icon" class="icon animate" [ngClass]="isScrolled ? 'show' : 'hide'" />
-	<h2 class="header-title" [ngClass]="isScrolled ? 'show' : 'hide'" >One Racing League</h2>
+	<div class="section-1">
 		<a [routerLink]="['privacy-policy']" class="link">Privacy Policy</a>
+		<!-- [ngClass]="isScrolled ? 'hide' : 'show'" -->
+		<img src="/img/logo.png" class="oneracing-logo animate" >
+		<h1 class="animate">Manage your own Formula One team <br />
+		for the <span class="highlight-text">2018 </span>season!</h1>
 
-		<img src="/img/logo.png" class="oneracing-logo animate" [ngClass]="isScrolled ? 'hide' : 'show'">
-		<h1 class="animate" [ngClass]="isScrolled ? 'hide' : 'show'">Manage your own Formula One team<br /> for the <span class="highlight-text">2018 </span>season!</h1>
-		
-		<div class="animate scroll-btn" [ngClass]="isScrolled ? 'hide' : 'show'">
-			<img src="/img/scroll.png" class="">
-			<span class="scroll-txt">Scroll down</span>
+
+		<div class="input-holder">
+				<h4>Sign up for news and updates</h4>
+				<!-- Begin MailChimp Signup Form -->
+			<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+			<style type="text/css">
+				#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+				   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+			</style>
+			<div id="mc_embed_signup">
+			<form action="//oneracingleague.us16.list-manage.com/subscribe/post?u=788c98f793a1c2d216366b2f2&amp;id=ad38411686" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+			   <div id="mc_embed_signup_scroll">
+				
+				<input type="email" value="" name="EMAIL" class="form__field" id="mce-EMAIL" placeholder="email address" required>
+			    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+
+			    <input type="text" name="b_788c98f793a1c2d216366b2f2_ad38411686" tabindex="-1" value="">
+			    </div>
+			    
+
+			    <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn btn--primary btn--inside uppercase">
+			    </div>
+			</form>
+			</div>
+
+			<!--End mc_embed_signup-->
+
+			</div>
+
+
+			<div class="row logo-holder">
+				<h4>Coming soon to:</h4>
+				<a href="">
+					<img src="/img/app-store-logo.png" class="app-logo" />
+				</a>
+				<a href="">
+					<img src="/img/google-play-logo.png" class="play-logo" />
+				</a>
+			</div>
+
+
 		</div>
-	</div>
+</div>
 
-	<div class="section-2">
+
+
+
+
+
+<!-- 	<div class="section-2">
 		<div class="info-holder">
 			<div class="info">
 				<img src="/img/mag.png">
@@ -34,25 +78,17 @@
 			</div>
 		</div>
 	</div>
+ -->
+<!-- 
+		<div class="animate scroll-btn">
+			<img src="/img/scroll.png" class="">
+			<span class="scroll-txt">Scroll down</span>
+		</div> -->
 
-	<div class="section-3">
-		<div class="center-vert">
-			<div class="input-holder">
-				<h4>Sign up for news and updates</h4>
-				<form class="form">
-					<input type="email" class="form__field" placeholder="Your E-Mail Address" />
-					<button type="button" class="btn btn--primary btn--inside uppercase">Send</button>
-				</form>
-			</div>
-		
-			<div class="row logo-holder">
-				<h4>Coming soon to:</h4>
-				<a href="">
-					<img src="/img/app-store-logo.png" class="app-logo" />
-				</a>
-				<a href="">
-					<img src="/img/google-play-logo.png" class="play-logo" />
-				</a>
-			</div>
-		</div>
-	</div>
+
+	<!-- <img src="/img/icon.png" alt="one racing icon" class="icon animate"  /> -->
+
+
+<!-- 	<a href="https://www.facebook.com/oneracingleague/">
+		<img src="/img/fblogo.png" class="fb-logo" [ngClass]="isScrolled ? 'show' : 'hide'" />
+	</a> -->

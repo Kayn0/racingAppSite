@@ -37,8 +37,6 @@ export class HomeComponent implements OnInit {
     this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
     if(this.currPos >= this.changePos ) {
         this.isScrolled = true;
-        console.log("kasjdh");
-
     } else {
         this.isScrolled = false;
     }
