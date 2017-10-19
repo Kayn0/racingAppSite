@@ -3,21 +3,37 @@
   color: #333;
 }
 
-img {
+.about {
+	padding-bottom: 10px;
+}
+
+img.oneracing-logo {
 	height: auto;
-	margin-top: 20px;
-	max-width: 200px;
+	margin-top: 10vh;
+	max-width: 320px;
 	width: 50vw;
 }
 
 h1 {
 	color: #333;
+	font-family: 'ubuntu-bold', helvetica, sans-serif !important;
 	font-size: 24px;
 	letter-spacing: 0.5px;
 	margin: 30px auto 0;
 	max-width: 450px;
 	padding-top: 20px;
 	// text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+
+h3 {
+	color: #cf1411;
+	font-family: 'ubuntu-bold', helvetica, sans-serif !important;
+	font-size: 18px;
+}
+
+p {
+	line-height: 1.4;
 }
 
 .container {
@@ -27,30 +43,41 @@ h1 {
 	padding: 0;
 }
 
-.section-1 {
-	height: 100%;
-	h4 {
-		font-style: italic;
-		font-size: 14px;
-		color: #cf1411;
-	}
-	h3 {
-		margin-top: 20px;
-		font-size: 18px;
-	}
-	p,li {
-		text-align: left;
-		font-size: 15px;
-	}
-	li {
-		margin-top: 5px;
-	}
-	a {
-		color: #cf1411;
-	}
-	a:hover {
-		color: #333;
-	}
+
+h4 {
+	font-style: italic;
+	font-size: 14px;
+	color: #cf1411;
+  display:block;
+  background: #fff;
+  padding: 15px;
+  margin: 0 0 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #777;
+  border-left: 15px solid #cf1411;
+	-moz-box-shadow: 2px 2px 15px #ccc;
+	-webkit-box-shadow: 2px 2px 15px #ccc;
+	box-shadow: 2px 2px 15px #ccc;
+}
+
+h3 {
+	margin-top: 30px;
+	font-size: 18px;
+}
+p,li {
+	text-align: left;
+	font-size: 15px;
+}
+li {
+	margin-top: 5px;
+}
+a {
+	color: #cf1411;
+}
+a:hover {
+	color: #333;
 }
 
 .section-2 {
@@ -66,20 +93,38 @@ h1 {
 	width: 60%;
 	max-width: 500px;
 	height: auto;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 	padding: 0 20px 20px;
+	text-align: left;
 }
 
 .link {
 	background-color: #cf1411;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	top: 20px;
+	top: 10px;
 	border-radius: 2px;
-	color: #fff!important;
+	color: #fff;
+	font-family: 'ubuntu-regular', helvetica, sans-serif !important;
+	height: 30px;
+	letter-spacing: 0.5px;
+	line-height: 30px;
 	position: absolute;
-	left: 20px;
+	right: 10px;
 	text-decoration: none;
 	padding: 5px 10px;
+	position: fixed;
 	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+	-webkit-text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+@media(max-width: 475px) {
+	img.oneracing-logo {
+		margin-top: 15vh !important;
+		max-width: 240px !important;
+		width: 240px !important;
+	}
+
+	.card {
+		// padding: 0 20px 20px;
+		width: 80%;
+	}
 }

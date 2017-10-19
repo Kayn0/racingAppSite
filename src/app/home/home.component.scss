@@ -40,20 +40,20 @@ h2 {
 	text-decoration: none;
 	padding: 5px 10px;
 	position: fixed;
-	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+	-webkit-text-shadow: 0 0 3px rgba(0,0,0,0.3);
 }
 
 .section-1 {
 	background-color: #000;
-
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	min-height: calc(100vh - 10vh);
 	height: 100%;
 	transition: all 0.6s ease;
 	-webkit-transition: all 0.6s ease;
-
-	
+	h1 {
+		max-width: 400px;
+	}
 	img.oneracing-logo {
 		height: auto;
 		margin-top: 10vh;
@@ -62,14 +62,13 @@ h2 {
 	}
 	
 	.logo-holder {
-		height: 60px;
 		margin: 60px 0 40px;
 		color: #fff;
 		
 		img {
 			height: 100%;
 			max-height: 40px;
-			margin: 0 20px;
+			margin: 10px 20px 0;
 			width: auto;
 		}
 	}
@@ -121,14 +120,80 @@ h2 {
 	background: none !important;
 }
 
+#mc_embed_signup_scroll {
+	margin: 0 auto;
+  width: 280px;
+}
+
 #mc-embedded-subscribe {
 	border: none!important;
 	position: absolute;
-  top: 52px;
+  top: 88px;
+  right: 120px;
+}
+
+.email-input,
+.email-label {
+	display: block;
+	text-align: left;
+}
+
+.email-label {
+	margin: 20px 0 6px;
+}
+
+input.email-input {
+	color: #000;
+	font-family: 'ubuntu-regular', helvetica, sans-serif !important; 
+	font-size: 16px;
+	height: 44px;
+	padding-left: 8px;
+	width: 268px;
+
 }
 
 // animations
 .animate {
 	transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
+}
+
+@media(max-width: 640px) {
+	.input-holder {
+		overflow: visible;
+		padding: 40px 10px !important;
+		width: initial !important;
+	}
+
+	#mc-embedded-subscribe {
+		right: 50px !important;
+	}
+}
+
+@media(max-width: 475px) {
+	.input-holder {
+		margin: 100px 10px 0 !important;
+		overflow: visible;
+		padding: 40px 10px !important;
+		width: initial !important;
+	}
+
+	.section-1 h1 {
+		font-size: 20px !important;
+		padding: 0 20px;
+		margin-top: 10px
+	}
+
+	img.oneracing-logo {
+		margin-top: 15vh !important;
+		width: 240px !important;
+	}
+
+	#mc-embedded-subscribe {
+		position: relative !important;
+		float: right;
+		right: initial !important;
+		top: initial !important;
+		margin: 10px 0;
+	}
 }
