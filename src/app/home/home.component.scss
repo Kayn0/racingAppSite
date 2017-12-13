@@ -28,6 +28,8 @@ h2 {
 
 .link {
 	background-color: #cf1411;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	top: 10px;
 	border-radius: 2px;
 	color: #fff;
@@ -41,6 +43,12 @@ h2 {
 	padding: 5px 10px;
 	position: fixed;
 	-webkit-text-shadow: 0 0 3px rgba(0,0,0,0.3);
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+
+.link:hover {
+	background-color: #333;
 }
 
 .section-1 {
@@ -51,9 +59,11 @@ h2 {
 	height: 100%;
 	transition: all 0.6s ease;
 	-webkit-transition: all 0.6s ease;
+	
 	h1 {
 		max-width: 400px;
 	}
+
 	img.oneracing-logo {
 		height: auto;
 		margin-top: 10vh;
@@ -129,7 +139,7 @@ h2 {
 	border: none!important;
 	position: absolute;
   top: 88px;
-  right: 120px;
+  right: 100px;
 }
 
 .email-input,
@@ -166,7 +176,7 @@ input.email-input {
 	}
 
 	#mc-embedded-subscribe {
-		right: 50px !important;
+		right: 30px !important;
 	}
 }
 
